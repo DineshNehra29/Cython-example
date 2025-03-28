@@ -1,6 +1,6 @@
 # cython: language_level=3
-from libcpp cimport bool  # Correctly import bool
-from algorithm cimport Algorithm  # Correct import
+from libcpp cimport bool  
+from algorithm cimport Algorithm  
 
 
 cdef class PyAlgorithm:

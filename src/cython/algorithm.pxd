@@ -1,4 +1,4 @@
-from libcpp cimport bool  # Import bool properly
+from libcpp cimport bool  
 
 cdef extern from "../cpp/algorithm.h":
     cdef cppclass Algorithm:
