@@ -2183,9 +2183,6 @@ static PyObject *__pyx_builtin_TypeError;
 /* #### Code section: string_decls ### */
 static const char __pyx_k__9[] = "?";
 static const char __pyx_k_gc[] = "gc";
-static const char __pyx_k_p1[] = "p1";
-static const char __pyx_k_p2[] = "p2";
-static const char __pyx_k_p3[] = "p3";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
 static const char __pyx_k_self[] = "self";
@@ -2222,7 +2219,7 @@ static const char __pyx_k_PyAlgorithm___reduce_cython[] = "PyAlgorithm.__reduce_
 static const char __pyx_k_PyAlgorithm___setstate_cython[] = "PyAlgorithm.__setstate_cython__";
 static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __reduce__ due to non-trivial __cinit__";
 /* #### Code section: decls ### */
-static int __pyx_pf_9algorithm_11PyAlgorithm___cinit__(struct __pyx_obj_9algorithm_PyAlgorithm *__pyx_v_self, double __pyx_v_p1, int __pyx_v_p2, bool __pyx_v_p3); /* proto */
+static int __pyx_pf_9algorithm_11PyAlgorithm___cinit__(struct __pyx_obj_9algorithm_PyAlgorithm *__pyx_v_self, double __pyx_v_param1, int __pyx_v_param2, bool __pyx_v_param3); /* proto */
 static void __pyx_pf_9algorithm_11PyAlgorithm_2__dealloc__(struct __pyx_obj_9algorithm_PyAlgorithm *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_9algorithm_11PyAlgorithm_4set_params(struct __pyx_obj_9algorithm_PyAlgorithm *__pyx_v_self, PyObject *__pyx_v_kwargs); /* proto */
 static PyObject *__pyx_pf_9algorithm_11PyAlgorithm_6get_params(struct __pyx_obj_9algorithm_PyAlgorithm *__pyx_v_self); /* proto */
@@ -2287,11 +2284,11 @@ typedef struct {
   PyObject *__pyx_n_s_main;
   PyObject *__pyx_n_s_name;
   PyObject *__pyx_kp_s_no_default___reduce___due_to_non;
-  PyObject *__pyx_n_s_p1;
-  PyObject *__pyx_n_s_p2;
-  PyObject *__pyx_n_s_p3;
+  PyObject *__pyx_n_s_param1;
   PyObject *__pyx_n_u_param1;
+  PyObject *__pyx_n_s_param2;
   PyObject *__pyx_n_u_param2;
+  PyObject *__pyx_n_s_param3;
   PyObject *__pyx_n_u_param3;
   PyObject *__pyx_n_s_pyx_state;
   PyObject *__pyx_n_s_reduce;
@@ -2379,11 +2376,11 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_main);
   Py_CLEAR(clear_module_state->__pyx_n_s_name);
   Py_CLEAR(clear_module_state->__pyx_kp_s_no_default___reduce___due_to_non);
-  Py_CLEAR(clear_module_state->__pyx_n_s_p1);
-  Py_CLEAR(clear_module_state->__pyx_n_s_p2);
-  Py_CLEAR(clear_module_state->__pyx_n_s_p3);
+  Py_CLEAR(clear_module_state->__pyx_n_s_param1);
   Py_CLEAR(clear_module_state->__pyx_n_u_param1);
+  Py_CLEAR(clear_module_state->__pyx_n_s_param2);
   Py_CLEAR(clear_module_state->__pyx_n_u_param2);
+  Py_CLEAR(clear_module_state->__pyx_n_s_param3);
   Py_CLEAR(clear_module_state->__pyx_n_u_param3);
   Py_CLEAR(clear_module_state->__pyx_n_s_pyx_state);
   Py_CLEAR(clear_module_state->__pyx_n_s_reduce);
@@ -2449,11 +2446,11 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_main);
   Py_VISIT(traverse_module_state->__pyx_n_s_name);
   Py_VISIT(traverse_module_state->__pyx_kp_s_no_default___reduce___due_to_non);
-  Py_VISIT(traverse_module_state->__pyx_n_s_p1);
-  Py_VISIT(traverse_module_state->__pyx_n_s_p2);
-  Py_VISIT(traverse_module_state->__pyx_n_s_p3);
+  Py_VISIT(traverse_module_state->__pyx_n_s_param1);
   Py_VISIT(traverse_module_state->__pyx_n_u_param1);
+  Py_VISIT(traverse_module_state->__pyx_n_s_param2);
   Py_VISIT(traverse_module_state->__pyx_n_u_param2);
+  Py_VISIT(traverse_module_state->__pyx_n_s_param3);
   Py_VISIT(traverse_module_state->__pyx_n_u_param3);
   Py_VISIT(traverse_module_state->__pyx_n_s_pyx_state);
   Py_VISIT(traverse_module_state->__pyx_n_s_reduce);
@@ -2531,11 +2528,11 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_main __pyx_mstate_global->__pyx_n_s_main
 #define __pyx_n_s_name __pyx_mstate_global->__pyx_n_s_name
 #define __pyx_kp_s_no_default___reduce___due_to_non __pyx_mstate_global->__pyx_kp_s_no_default___reduce___due_to_non
-#define __pyx_n_s_p1 __pyx_mstate_global->__pyx_n_s_p1
-#define __pyx_n_s_p2 __pyx_mstate_global->__pyx_n_s_p2
-#define __pyx_n_s_p3 __pyx_mstate_global->__pyx_n_s_p3
+#define __pyx_n_s_param1 __pyx_mstate_global->__pyx_n_s_param1
 #define __pyx_n_u_param1 __pyx_mstate_global->__pyx_n_u_param1
+#define __pyx_n_s_param2 __pyx_mstate_global->__pyx_n_s_param2
 #define __pyx_n_u_param2 __pyx_mstate_global->__pyx_n_u_param2
+#define __pyx_n_s_param3 __pyx_mstate_global->__pyx_n_s_param3
 #define __pyx_n_u_param3 __pyx_mstate_global->__pyx_n_u_param3
 #define __pyx_n_s_pyx_state __pyx_mstate_global->__pyx_n_s_pyx_state
 #define __pyx_n_s_reduce __pyx_mstate_global->__pyx_n_s_reduce
@@ -2560,17 +2557,17 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 /* "algorithm.pyx":9
  *     cdef Algorithm* c_algo
  * 
- *     def __cinit__(self, double p1=10.0, int p2=5, bool p3=True):             # <<<<<<<<<<<<<<
+ *     def __cinit__(self, double param1=10.0, int param2=5, bool param3=True):             # <<<<<<<<<<<<<<
  * 
- *         self.c_algo = new Algorithm(p1, p2, p3)
+ *         self.c_algo = new Algorithm(param1, param2, param3)
  */
 
 /* Python wrapper */
 static int __pyx_pw_9algorithm_11PyAlgorithm_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static int __pyx_pw_9algorithm_11PyAlgorithm_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  double __pyx_v_p1;
-  int __pyx_v_p2;
-  bool __pyx_v_p3;
+  double __pyx_v_param1;
+  int __pyx_v_param2;
+  bool __pyx_v_param3;
   CYTHON_UNUSED Py_ssize_t __pyx_nargs;
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject* values[3] = {0,0,0};
@@ -2587,7 +2584,7 @@ static int __pyx_pw_9algorithm_11PyAlgorithm_1__cinit__(PyObject *__pyx_v_self, 
   #endif
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
   {
-    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_p1,&__pyx_n_s_p2,&__pyx_n_s_p3,0};
+    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_param1,&__pyx_n_s_param2,&__pyx_n_s_param3,0};
     if (__pyx_kwds) {
       Py_ssize_t kw_args;
       switch (__pyx_nargs) {
@@ -2604,21 +2601,21 @@ static int __pyx_pw_9algorithm_11PyAlgorithm_1__cinit__(PyObject *__pyx_v_self, 
       switch (__pyx_nargs) {
         case  0:
         if (kw_args > 0) {
-          PyObject* value = __Pyx_GetKwValue_VARARGS(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_p1);
+          PyObject* value = __Pyx_GetKwValue_VARARGS(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_param1);
           if (value) { values[0] = __Pyx_Arg_NewRef_VARARGS(value); kw_args--; }
           else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 9, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  1:
         if (kw_args > 0) {
-          PyObject* value = __Pyx_GetKwValue_VARARGS(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_p2);
+          PyObject* value = __Pyx_GetKwValue_VARARGS(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_param2);
           if (value) { values[1] = __Pyx_Arg_NewRef_VARARGS(value); kw_args--; }
           else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 9, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (kw_args > 0) {
-          PyObject* value = __Pyx_GetKwValue_VARARGS(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_p3);
+          PyObject* value = __Pyx_GetKwValue_VARARGS(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_param3);
           if (value) { values[2] = __Pyx_Arg_NewRef_VARARGS(value); kw_args--; }
           else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 9, __pyx_L3_error)
         }
@@ -2640,19 +2637,19 @@ static int __pyx_pw_9algorithm_11PyAlgorithm_1__cinit__(PyObject *__pyx_v_self, 
       }
     }
     if (values[0]) {
-      __pyx_v_p1 = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_p1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 9, __pyx_L3_error)
+      __pyx_v_param1 = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_param1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 9, __pyx_L3_error)
     } else {
-      __pyx_v_p1 = ((double)10.0);
+      __pyx_v_param1 = ((double)10.0);
     }
     if (values[1]) {
-      __pyx_v_p2 = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_p2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 9, __pyx_L3_error)
+      __pyx_v_param2 = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_param2 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 9, __pyx_L3_error)
     } else {
-      __pyx_v_p2 = ((int)5);
+      __pyx_v_param2 = ((int)5);
     }
     if (values[2]) {
-      __pyx_v_p3 = __Pyx_PyObject_IsTrue(values[2]); if (unlikely((__pyx_v_p3 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 9, __pyx_L3_error)
+      __pyx_v_param3 = __Pyx_PyObject_IsTrue(values[2]); if (unlikely((__pyx_v_param3 == ((bool)-1)) && PyErr_Occurred())) __PYX_ERR(1, 9, __pyx_L3_error)
     } else {
-      __pyx_v_p3 = ((bool)1);
+      __pyx_v_param3 = ((bool)1);
     }
   }
   goto __pyx_L6_skip;
@@ -2671,7 +2668,7 @@ static int __pyx_pw_9algorithm_11PyAlgorithm_1__cinit__(PyObject *__pyx_v_self, 
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9algorithm_11PyAlgorithm___cinit__(((struct __pyx_obj_9algorithm_PyAlgorithm *)__pyx_v_self), __pyx_v_p1, __pyx_v_p2, __pyx_v_p3);
+  __pyx_r = __pyx_pf_9algorithm_11PyAlgorithm___cinit__(((struct __pyx_obj_9algorithm_PyAlgorithm *)__pyx_v_self), __pyx_v_param1, __pyx_v_param2, __pyx_v_param3);
 
   /* function exit code */
   {
@@ -2684,7 +2681,7 @@ static int __pyx_pw_9algorithm_11PyAlgorithm_1__cinit__(PyObject *__pyx_v_self, 
   return __pyx_r;
 }
 
-static int __pyx_pf_9algorithm_11PyAlgorithm___cinit__(struct __pyx_obj_9algorithm_PyAlgorithm *__pyx_v_self, double __pyx_v_p1, int __pyx_v_p2, bool __pyx_v_p3) {
+static int __pyx_pf_9algorithm_11PyAlgorithm___cinit__(struct __pyx_obj_9algorithm_PyAlgorithm *__pyx_v_self, double __pyx_v_param1, int __pyx_v_param2, bool __pyx_v_param3) {
   int __pyx_r;
   Algorithm *__pyx_t_1;
   int __pyx_lineno = 0;
@@ -2692,14 +2689,14 @@ static int __pyx_pf_9algorithm_11PyAlgorithm___cinit__(struct __pyx_obj_9algorit
   int __pyx_clineno = 0;
 
   /* "algorithm.pyx":11
- *     def __cinit__(self, double p1=10.0, int p2=5, bool p3=True):
+ *     def __cinit__(self, double param1=10.0, int param2=5, bool param3=True):
  * 
- *         self.c_algo = new Algorithm(p1, p2, p3)             # <<<<<<<<<<<<<<
+ *         self.c_algo = new Algorithm(param1, param2, param3)             # <<<<<<<<<<<<<<
  * 
  *     def __dealloc__(self):
  */
   try {
-    __pyx_t_1 = new Algorithm(__pyx_v_p1, __pyx_v_p2, __pyx_v_p3);
+    __pyx_t_1 = new Algorithm(__pyx_v_param1, __pyx_v_param2, __pyx_v_param3);
   } catch(...) {
     __Pyx_CppExn2PyErr();
     __PYX_ERR(1, 11, __pyx_L1_error)
@@ -2709,9 +2706,9 @@ static int __pyx_pf_9algorithm_11PyAlgorithm___cinit__(struct __pyx_obj_9algorit
   /* "algorithm.pyx":9
  *     cdef Algorithm* c_algo
  * 
- *     def __cinit__(self, double p1=10.0, int p2=5, bool p3=True):             # <<<<<<<<<<<<<<
+ *     def __cinit__(self, double param1=10.0, int param2=5, bool param3=True):             # <<<<<<<<<<<<<<
  * 
- *         self.c_algo = new Algorithm(p1, p2, p3)
+ *         self.c_algo = new Algorithm(param1, param2, param3)
  */
 
   /* function exit code */
@@ -2725,7 +2722,7 @@ static int __pyx_pf_9algorithm_11PyAlgorithm___cinit__(struct __pyx_obj_9algorit
 }
 
 /* "algorithm.pyx":13
- *         self.c_algo = new Algorithm(p1, p2, p3)
+ *         self.c_algo = new Algorithm(param1, param2, param3)
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
  *         del self.c_algo
@@ -2757,7 +2754,7 @@ static void __pyx_pf_9algorithm_11PyAlgorithm_2__dealloc__(struct __pyx_obj_9alg
   delete __pyx_v_self->c_algo;
 
   /* "algorithm.pyx":13
- *         self.c_algo = new Algorithm(p1, p2, p3)
+ *         self.c_algo = new Algorithm(param1, param2, param3)
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
  *         del self.c_algo
@@ -3582,11 +3579,11 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
     {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
     {&__pyx_kp_s_no_default___reduce___due_to_non, __pyx_k_no_default___reduce___due_to_non, sizeof(__pyx_k_no_default___reduce___due_to_non), 0, 0, 1, 0},
-    {&__pyx_n_s_p1, __pyx_k_p1, sizeof(__pyx_k_p1), 0, 0, 1, 1},
-    {&__pyx_n_s_p2, __pyx_k_p2, sizeof(__pyx_k_p2), 0, 0, 1, 1},
-    {&__pyx_n_s_p3, __pyx_k_p3, sizeof(__pyx_k_p3), 0, 0, 1, 1},
+    {&__pyx_n_s_param1, __pyx_k_param1, sizeof(__pyx_k_param1), 0, 0, 1, 1},
     {&__pyx_n_u_param1, __pyx_k_param1, sizeof(__pyx_k_param1), 0, 1, 0, 1},
+    {&__pyx_n_s_param2, __pyx_k_param2, sizeof(__pyx_k_param2), 0, 0, 1, 1},
     {&__pyx_n_u_param2, __pyx_k_param2, sizeof(__pyx_k_param2), 0, 1, 0, 1},
+    {&__pyx_n_s_param3, __pyx_k_param3, sizeof(__pyx_k_param3), 0, 0, 1, 1},
     {&__pyx_n_u_param3, __pyx_k_param3, sizeof(__pyx_k_param3), 0, 1, 0, 1},
     {&__pyx_n_s_pyx_state, __pyx_k_pyx_state, sizeof(__pyx_k_pyx_state), 0, 0, 1, 1},
     {&__pyx_n_s_reduce, __pyx_k_reduce, sizeof(__pyx_k_reduce), 0, 0, 1, 1},
@@ -4117,8 +4114,8 @@ if (!__Pyx_RefNanny) {
 
   /* "algorithm.pyx":1
  * # cython: language_level=3             # <<<<<<<<<<<<<<
- * from libcpp cimport bool  # Correctly import bool
- * from algorithm cimport Algorithm  # Correct import
+ * from libcpp cimport bool
+ * from algorithm cimport Algorithm
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

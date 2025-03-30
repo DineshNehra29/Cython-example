@@ -6,9 +6,9 @@ from algorithm cimport Algorithm
 cdef class PyAlgorithm:
     cdef Algorithm* c_algo
 
-    def __cinit__(self, double p1=10.0, int p2=5, bool p3=True):
-
-        self.c_algo = new Algorithm(p1, p2, p3)
+    def __cinit__(self, double param1=10.0, int param2=5, bool param3=True):
+     
+        self.c_algo = new Algorithm(param1, param2, param3)
 
     def __dealloc__(self):
         del self.c_algo

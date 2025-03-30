@@ -53,7 +53,12 @@ Expected output:
 Initial parameters: {'param1': 20.0, 'param2': 10, 'param3': True}
 Updated parameters: {'param1': 5.0, 'param2': 10, 'param3': False}
 Computation result: 15.0
+algo2 parameters: {'param1': 210.0, 'param2': 100, 'param3': True}
+Computation result: 21000.0
+algo3 parameters: {'param1': 210.0, 'param2': 5, 'param3': True}
+Computation result: 1050.0
 ```
+Update `test.py` to try different examples.
 
 ## Explanation
 - **cpp/algorithm.h & cpp/algorithm.cpp**: Define the C++ class with multiple parameters.
